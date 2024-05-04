@@ -115,7 +115,6 @@ section {
 
 .iconfall-container {
   position: absolute;
-  top: 0;
   height: 300vh;
   width: 1000px;
   overflow: hidden;
@@ -185,4 +184,45 @@ section {
 
 .about p {
   font-size: 2rem;
+}
+
+.project {
+  width: 50vw;
+  height: 80vh;
+  background-color: black;
+  border: 1px solid white;
+}
+
+.projects-container {
+  position: relative;
+  height: 200vh;
+  max-width: 80vw;
+}
+
+.projects-container-inner {
+  position: sticky;
+  top: 0;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  overflow: hidden;
+}
+
+.horizontal-scroll-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.tools {
+  position: relative;
+}
+
+.tool {
+  position: absolute;
+  background-color: var(--text-color);
+  color: var(--background-color);
+  padding: 1rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
 }
