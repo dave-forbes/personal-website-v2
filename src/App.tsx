@@ -3,18 +3,21 @@ import Hero from './components/Hero';
 import Projects from './components/Projects';
 import IconFall from './components/IconFall';
 import { memo } from 'react';
+import Tools from './components/Tools';
+import Contact from './components/Contact';
 
 const MemoizedIconFall = memo(IconFall);
 
 export default function App() {
-  const sections = [Hero, About, Projects];
-
   return (
     <main id="main">
-      <MemoizedIconFall />
-      {sections.map((Section, index) => (
-        <Section key={index} />
-      ))}
+      <MemoizedIconFall pos="0" />
+      <Hero />
+      <About />
+      <Tools />
+      <Projects />
+      <MemoizedIconFall pos="300vh" />
+      <Contact />
     </main>
   );
 }
