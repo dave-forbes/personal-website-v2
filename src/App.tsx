@@ -10,7 +10,6 @@ export default function App() {
   const sections = [Hero, About, Projects];
 
   return (
-    <main>
     <main id="main">
       <MemoizedIconFall />
       {sections.map((Section, index) => (
