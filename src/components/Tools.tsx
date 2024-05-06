@@ -4,6 +4,7 @@ export default function Tools() {
   return (
     <section className="tools">
       <BlurBackground>
+        <h1 className="section-title">My tools</h1>
         <div className="grid">
           <div>
             <h2>Code Editor</h2>
