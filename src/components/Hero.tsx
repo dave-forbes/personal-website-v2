@@ -46,7 +46,7 @@ export default function Hero() {
               <motion.a
                 href="https://github.com/dave-forbes"
                 target="_blank"
-                className="button"
+                className="button dark"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 2.2 }}
@@ -56,7 +56,7 @@ export default function Hero() {
               <motion.a
                 href="https://www.linkedin.com/in/david-forbes-b372065b/"
                 target="_blank"
-                className="button"
+                className="button dark"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 2.4 }}
@@ -79,7 +79,7 @@ export default function Hero() {
                     setCopiedToClipboard('');
                   }, 1000);
                 }}
-                className="button"
+                className="button dark"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 2.6 }}
