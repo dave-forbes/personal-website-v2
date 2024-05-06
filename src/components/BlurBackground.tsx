@@ -17,7 +17,17 @@ export default function BlurBackground({
     if (backgroundRef.current) {
       const width = backgroundRef.current.offsetWidth;
       const height = backgroundRef.current.offsetHeight;
-      setBlurDimensions({ width: width + 200, height: height + 200 });
+      if (window.innerWidth > 500) {
+        setBlurDimensions({
+          width: width + 200,
+          height: height + 200,
+        });
+      } else {
+        setBlurDimensions({
+          width: width,
+          height: height + 200,
+        });
+      }
     }
   }, []);
 
