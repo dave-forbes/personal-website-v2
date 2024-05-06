@@ -75,3 +75,34 @@ export const icons = [
   SiTypescript,
   SiVite,
 ];
+
+export const projects = [
+  {
+    title: 'Discussr - Messaging App',
+    img: '/images/message_app_image_3.jpg',
+    tags: ['react', 'typescript', 'express', 'nodejs'],
+    description:
+      'A full stack app utilising a react front end and Express restfulAPI backend. Users can send and recive messages from other users. Users are able to create and update their profiles, upload images for their avatar and when sending messages. Images are stored in a amazon s3 bucket and data is stored on a MongoDB database.',
+  },
+  {
+    title: 'Climbtribe - Blog Platform',
+    img: '/images/blog_image_1.jpg',
+    tags: ['react', 'typescript', 'express', 'nodejs', 'restApi'],
+    description:
+      'A blogging website with react front end fetching data from an express restful API. Users can log in, create and edit posts, as well as comment on other posts. There is a simple content management system. The UI was built using chakra UI.',
+  },
+  {
+    title: 'Backpack and Sack - Online Store',
+    img: '/images/shop_image_1.jpg',
+    tags: ['react', 'JavaScript'],
+    description:
+      'An online store using a react. Users can browse products and add, remove and update quantities for items in their cart. A fully responsive UI and fast routing thanks to React router makes it a seamless shoping experience. Also featuring a hilarious tongue and cheek fake business name...🤦.',
+  },
+  {
+    title: 'JavaScript Calculator',
+    img: '/images/calculator_image_1.jpg',
+    tags: ['react', 'typescript', 'express', 'nodejs', 'restApi'],
+    description:
+      'A vanilla javascript calculator, created without any frameworks or tools. The priority was to create an app that has great UI and UX. I did this by adding animations to the buttons and adding feedback for users actions.',
+  },
+];
