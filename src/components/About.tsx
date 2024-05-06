@@ -4,6 +4,7 @@ export default function About() {
   return (
     <section className="about" id="about">
       <BlurBackground>
+        <h1 className="section-title">About me</h1>
         <div className="about-text-container">
           <p>
             I am self taught developer, currenty specializing in the
