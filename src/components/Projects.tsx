@@ -25,8 +25,9 @@ export default function Projects() {
             className="horizontal-scroll-container"
             style={{ x }}
           >
-            {projects.map((project) => (
+            {projects.map((project, index) => (
               <Project
+                key={index}
                 title={project.title}
                 image={project.img}
                 // tags={project.tags}
