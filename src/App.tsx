@@ -4,6 +4,7 @@ import Projects from './components/Projects';
 import IconFall from './components/IconFall';
 import { memo } from 'react';
 import Tools from './components/Tools';
+import Footer from './components/Footer';
 // import Contact from './components/Contact';
 
 const MemoizedIconFall = memo(IconFall);
@@ -17,6 +18,7 @@ export default function App() {
       <Tools />
       <Projects />
       {/* <Contact /> */}
+      <Footer />
     </main>
   );
 }
