@@ -12,7 +12,7 @@ export default function Projects() {
   const x = useTransform(
     scrollYProgress,
     [0, 1],
-    ['1%', windowWidth > 650 ? '-70%' : '-75%']
+    ['1%', windowWidth > 650 ? '-65%' : '-75%']
   );
 
   return (
