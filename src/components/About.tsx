@@ -13,7 +13,7 @@ export default function About() {
           </p>
           <p>
             I'm looking for opportunities to work with other
-            developers and continuing my web developmnet journey.
+            developers and continuing my web development journey.
           </p>
           <p>
             When I am not coding, I'll be rock climbing, hiking or
