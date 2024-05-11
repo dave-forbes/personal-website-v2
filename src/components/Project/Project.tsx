@@ -16,14 +16,18 @@ export default function Project({
 }: ProjectProps) {
   return (
     <div className={styles.project}>
-      <img src={image} />
-      <h1>{title}</h1>
-      {/* <div className="project-tag-container">
+      <div className={styles.info}>
+        <img src={image} />
+        {/* <div className="project-tag-container">
         {tags.map((tag) => (
           <ProjectTag content={tag} />
         ))}
       </div> */}
-      <p>{description}</p>
+        <div className={styles.text}>
+          <h1>{title}</h1>
+          <p>{description}</p>
+        </div>
+      </div>
       <div className={styles.projectLinkContainer}>
         <a href="" className="button light">
           Repo <FaRegFileCode />
