@@ -7,13 +7,7 @@ export default function Projects() {
   const targetRef = useRef<HTMLDivElement | null>(null);
   const { scrollYProgress } = useScroll({ target: targetRef });
 
-  const windowWidth = window.innerWidth;
-
-  const x = useTransform(
-    scrollYProgress,
-    [0, 1],
-    ['1%', windowWidth > 650 ? '-65%' : '-75%']
-  );
+  const x = useTransform(scrollYProgress, [0, 1], ['1%', '-75%']);
 
   return (
     <section ref={targetRef} className="projects-container">
