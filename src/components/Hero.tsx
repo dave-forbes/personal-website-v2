@@ -15,7 +15,7 @@ export default function Hero() {
   const [copiedToClipboard, setCopiedToClipboard] = useState('');
 
   return (
-    <section className="hero">
+    <section className="hero" id="hero">
       <BlurBackground>
         <div className="title">
           <motion.h1
