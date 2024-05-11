@@ -14,21 +14,24 @@ export default function BlurBackground({
   });
 
   useEffect(() => {
-    if (backgroundRef.current) {
-      const width = backgroundRef.current.offsetWidth;
-      const height = backgroundRef.current.offsetHeight;
-      if (window.innerWidth > 500) {
+    const setBlur = () => {
+      if (backgroundRef.current) {
+        const width = backgroundRef.current.offsetWidth;
+        const height = backgroundRef.current.offsetHeight;
         setBlurDimensions({
-          width: width + 200,
-          height: height + 200,
-        });
-      } else {
-        setBlurDimensions({
-          width: width,
-          height: height + 200,
+          width: width + 20,
+          height: height + 100,
         });
       }
-    }
+    };
+    setBlur();
+
+    const resize = () => {
+      setBlur();
+    };
+
+    window.addEventListener('resize', resize);
+    return window.removeEventListener('resize', resize);
   }, []);
 
   return (
