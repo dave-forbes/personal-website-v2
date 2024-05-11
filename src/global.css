@@ -98,8 +98,8 @@ a {
 }
 
 .blurry-element {
-  top: -100px;
-  left: -100px;
+  top: -50px;
+  left: -20px;
   position: absolute;
   background-color: var(--background-color);
   border-radius: var(--border-radius);
