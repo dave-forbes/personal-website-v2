@@ -25,10 +25,10 @@ export default function Project({
       <p>{description}</p>
       <div className="project-link-container">
         <a href="" className="button light">
-          Code <FaRegFileCode />
+          Repo <FaRegFileCode />
         </a>
         <a href="" className="button light">
-          Live Demo <LuExternalLink />
+          Live <LuExternalLink />
         </a>
       </div>
     </div>
