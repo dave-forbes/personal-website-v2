@@ -26,8 +26,9 @@
   :root {
     --background-color: rgb(243, 245, 248);
     --text-color: rgb(0, 8, 26);
-    --lighter-text-color: rgb(7, 23, 60);
     --accent-color: rgb(11, 188, 191);
+    --card-bg-color: rgb(7, 23, 60);
+    --card-text-color: rgb(243, 245, 248);
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -35,6 +36,8 @@
     --background-color: rgb(0, 8, 26);
     --text-color: rgb(229, 233, 243);
     --accent-color: rgb(84, 252, 255);
+    --card-bg-color: rgb(31, 49, 77);
+    --card-text-color: rgb(229, 233, 243);
   }
 }
 :root {
