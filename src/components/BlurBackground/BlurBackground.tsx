@@ -1,4 +1,5 @@
 import { ReactNode, useEffect, useRef, useState } from 'react';
+import styles from './BlurBackground.module.css';
 
 interface BlurBackgroundProps {
   children: ReactNode;
@@ -35,8 +36,11 @@ export default function BlurBackground({
   }, []);
 
   return (
-    <div className="blur-background" ref={backgroundRef}>
-      <div className="blurry-element" style={blurDimensions}></div>
+    <div className={styles.blurBackground} ref={backgroundRef}>
+      <div
+        className={styles.blurryElement}
+        style={blurDimensions}
+      ></div>
       {children}
     </div>
   );

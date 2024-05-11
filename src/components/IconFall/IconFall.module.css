@@ -1,0 +1,12 @@
+.iconfallContainer {
+  position: absolute;
+  height: 300vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+@media (min-width: 1000px) {
+  .iconfallContainer {
+    width: 1000px;
+  }
+}

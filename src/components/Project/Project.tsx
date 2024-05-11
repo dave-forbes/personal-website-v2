@@ -1,6 +1,7 @@
 // import ProjectTag from './ProjectTag';
 import { FaRegFileCode } from 'react-icons/fa';
 import { LuExternalLink } from 'react-icons/lu';
+import styles from './Project.module.css';
 
 interface ProjectProps {
   image: string;
@@ -14,7 +15,7 @@ export default function Project({
   description,
 }: ProjectProps) {
   return (
-    <div className="project">
+    <div className={styles.project}>
       <img src={image} />
       <h1>{title}</h1>
       {/* <div className="project-tag-container">
@@ -23,7 +24,7 @@ export default function Project({
         ))}
       </div> */}
       <p>{description}</p>
-      <div className="project-link-container">
+      <div className={styles.projectLinkContainer}>
         <a href="" className="button light">
           Repo <FaRegFileCode />
         </a>

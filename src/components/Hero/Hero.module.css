@@ -1,0 +1,49 @@
+.hero {
+  display: grid;
+  place-items: center;
+}
+
+.title {
+  z-index: 999;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--accent-color);
+}
+
+.hero h2 {
+  font-family: 'PP Neue Montreal Thin', sans-serif;
+  font-size: 2.7rem;
+  font-weight: 100;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  position: relative;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.iconButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.toast {
+  position: absolute;
+  top: 40px;
+  left: 60px;
+  opacity: 0;
+  background-color: var(--text-color);
+  border-radius: 0 var(--border-radius) var(--border-radius)
+    var(--border-radius);
+  padding: 1rem;
+  color: var(--background-color);
+}

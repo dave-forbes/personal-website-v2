@@ -1,0 +1,26 @@
+.projectsContainer {
+  position: relative;
+  height: 300vh;
+  max-width: 90vw;
+}
+
+.projectsContainerInner {
+  position: sticky;
+  top: 0;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  overflow: hidden;
+}
+
+.horizontalScrollContainer {
+  display: flex;
+  gap: 1rem;
+  padding-left: 20vw;
+}
+
+@media (max-width: 650px) {
+  .horizontalScrollContainer {
+    padding-left: 0rem;
+  }
+}

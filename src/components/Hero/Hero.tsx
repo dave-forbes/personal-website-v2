@@ -1,10 +1,10 @@
 import { useState } from 'react';
-
 import { motion } from 'framer-motion';
 import { IoIosArrowRoundDown } from 'react-icons/io';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
-import BlurBackground from './BlurBackground';
+import BlurBackground from '../BlurBackground/BlurBackground';
+import styles from './Hero.module.css';
 
 const toastVariants = {
   hidden: { opacity: 0, y: -10 },
@@ -15,9 +15,9 @@ export default function Hero() {
   const [copiedToClipboard, setCopiedToClipboard] = useState('');
 
   return (
-    <section className="hero" id="hero">
+    <section className={styles.hero} id="hero">
       <BlurBackground>
-        <div className="title">
+        <div className={styles.title}>
           <motion.h1
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -32,7 +32,7 @@ export default function Hero() {
           >
             Web Developer based in London.
           </motion.h2>
-          <div className="hero-buttons">
+          <div className={styles.heroButtons}>
             <motion.a
               href="#about"
               className="button border"
@@ -42,7 +42,7 @@ export default function Hero() {
             >
               Tell me more <IoIosArrowRoundDown />{' '}
             </motion.a>
-            <div className="icon-buttons">
+            <div className={styles.iconButtons}>
               <motion.a
                 href="https://github.com/dave-forbes"
                 target="_blank"
@@ -86,7 +86,7 @@ export default function Hero() {
               >
                 <HiOutlineMail />
                 <motion.p
-                  className="toast"
+                  className={styles.toast}
                   variants={toastVariants}
                   initial="hidden"
                   animate={copiedToClipboard ? 'visible' : 'hidden'}

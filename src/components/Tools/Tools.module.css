@@ -1,0 +1,41 @@
+.tools {
+  position: relative;
+}
+
+@media (min-width: 650px) {
+  .tools {
+    width: 100%;
+  }
+}
+.toolsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
+}
+
+.toolsGrid h2 {
+  font-weight: 400;
+  border-bottom: 1px solid var(--accent-color);
+  padding-bottom: 1rem;
+}
+
+.toolsGrid ul {
+  padding: 0;
+}
+
+.toolsGrid li {
+  list-style: none;
+}
+
+@media (max-width: 800px) {
+  .toolsGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .toolsGrid h2 {
+    font-weight: 400;
+    border-bottom: 1px solid var(--accent-color);
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+}

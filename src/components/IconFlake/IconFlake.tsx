@@ -22,7 +22,6 @@ export default function IconFlake({ Icon }: IconFlakeProps) {
 
   return (
     <motion.div
-      className="icon-flake-container"
       initial={{ y: 0, opacity: 0, x: randomPos }}
       animate={{
         y: '100vh',

@@ -1,0 +1,77 @@
+.project {
+  width: 80vw;
+  height: 80vh;
+  background-color: var(--lighter-text-color);
+  color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  overflow: hidden;
+}
+
+@media (min-width: 1000px) {
+  .project {
+    width: 40vw;
+  }
+}
+
+.project h1 {
+  font-size: 1.5rem;
+  font-weight: 200;
+  width: 90%;
+}
+
+.project img {
+  width: 90%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.project p {
+  max-width: 90%;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.project-tag-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.project-tag {
+  background-color: var(--accent-color);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+}
+
+.projectLinkContainer,
+.projectLinkContainer a {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media (max-width: 650px) {
+  .projectLinkContainer a {
+    width: 90%;
+    gap: 0.5rem;
+    font-size: 1rem;
+  }
+  .project h1 {
+    font-size: 1.5rem;
+  }
+
+  .project p {
+    font-size: 1rem;
+  }
+
+  .project-tag-container {
+    font-size: 0.8rem;
+  }
+}

@@ -1,11 +1,12 @@
-import BlurBackground from './BlurBackground';
+import BlurBackground from '../BlurBackground/BlurBackground';
+import styles from './Tools.module.css';
 
 export default function Tools() {
   return (
-    <section className="tools">
+    <section className={styles.tools}>
       <BlurBackground>
         <h1 className="section-title">My tools</h1>
-        <div className="grid">
+        <div className={styles.toolsGrid}>
           <div>
             <h2>Code Editor</h2>
             <ul>

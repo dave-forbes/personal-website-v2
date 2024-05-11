@@ -1,0 +1,16 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.about p {
+  font-size: 1.5rem;
+}
