@@ -1,11 +1,10 @@
-import About from './components/About';
-import Hero from './components/Hero';
-import Projects from './components/Projects';
-import IconFall from './components/IconFall';
+import About from './components/About/About';
+import Hero from './components/Hero/Hero';
+import Projects from './components/Projects/Projects';
+import IconFall from './components/IconFall/IconFall';
 import { memo } from 'react';
-import Tools from './components/Tools';
-import Footer from './components/Footer';
-// import Contact from './components/Contact';
+import Tools from './components/Tools/Tools';
+import Footer from './components/Footer/Footer';
 
 const MemoizedIconFall = memo(IconFall);
 
