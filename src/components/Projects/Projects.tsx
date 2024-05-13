@@ -20,13 +20,7 @@ export default function Projects() {
             style={{ x }}
           >
             {projects.map((project, index) => (
-              <Project
-                key={index}
-                title={project.title}
-                image={project.img}
-                // tags={project.tags}
-                description={project.description}
-              />
+              <Project key={index} project={project} />
             ))}
           </motion.div>
         </div>
