@@ -11,12 +11,11 @@ const MemoizedIconFall = memo(IconFall);
 export default function App() {
   return (
     <main id="main">
-      <MemoizedIconFall pos="0" />
+      {window.innerWidth > 700 && <MemoizedIconFall pos="0" />}
       <Hero />
       <About />
       <Tools />
       <Projects />
-      {/* <Contact /> */}
       <Footer />
     </main>
   );
