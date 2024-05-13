@@ -6,7 +6,7 @@ interface IconFlakeProps {
 }
 
 export default function IconFlake({ Icon }: IconFlakeProps) {
-  const randomPos = Math.floor(Math.random() * 900) + 50;
+  const randomPos = Math.floor(Math.random() * 601) + 50;
 
   const randomDuration = Math.floor(Math.random() * 30) + 10;
 
