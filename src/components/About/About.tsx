@@ -28,8 +28,7 @@ export default function About() {
               The Wax Preachers
             </a>
             . However, when the weather allows it, I like nothing
-            better than going out rock climbing or hiking. Nothing
-            inspires me more than nature.
+            better than going out rock climbing or hiking.
           </p>
           <p>
             My goals going forward are to start working with other
