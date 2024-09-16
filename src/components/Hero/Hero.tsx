@@ -30,7 +30,7 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1 }}
           >
-            Web Developer based in London.
+            Web Developer based in Manchester.
           </motion.h2>
           <div className={styles.heroButtons}>
             <motion.a
